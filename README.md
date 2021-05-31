@@ -4,7 +4,7 @@
 로그인 (로그인 여부)
 회원가입(아이디 중복 체크, 빈칸 거부)
 
-#코드
+# 코드
 
 - lOGINACTIVITY
   ``` // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
@@ -26,8 +26,8 @@
                                 intent.putExtra("userPass", userPass);
                                 //실행
                                 startActivity(intent);
-                                
-                                ```
+```
+
  -REGISTERREQUEST
   ```// URL에 전송 ( PHP 파일 연동 )
     final static private String URL = "http://hsanol62.dothome.co.kr/Register.php";
@@ -42,7 +42,7 @@
         map.put("userPassword", userPassword);
         map.put("userName", userName);
         map.put("userAge", userAge + "");
-    ```
+   ```
     
     
     
