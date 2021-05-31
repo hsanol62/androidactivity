@@ -1,6 +1,11 @@
 # androidactivity
 
- `구현
+# 기능
+로그인 (로그인 여부)
+회원가입(아이디 중복 체크, 빈칸 거부)
+
+
+ # 구현
 
 <img src="https://user-images.githubusercontent.com/71969709/120219397-26558380-c276-11eb-800a-f53a7b0199e5.png" width="30%">
 <img src="https://user-images.githubusercontent.com/71969709/120219440-366d6300-c276-11eb-836d-9d6357d7d2db.png" width="30%">
