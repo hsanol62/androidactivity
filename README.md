@@ -4,7 +4,48 @@
 로그인 (로그인 여부)
 회원가입(아이디 중복 체크, 빈칸 거부)
 
+#코드
 
+- lOGINACTIVITY
+  ``` // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
+                String userID = et_id.getText().toString();
+                String userPass = et_pass.getText().toString();```
+
+```//성공할 경우
+  boolean success = jsonObject.getBoolean("success");
+  String userID = jsonObject.getString("userID");
+                                String userPass = jsonObject.getString("userPassword");
+                                
+     //로그인 성공 알림창                           
+     Toast.makeText(getApplicationContext(),"로그인에 성공하였습니다.",Toast.LENGTH_SHORT).show();
+                         
+                         //로그인 창에서 메인창으로 이동
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                // 메인창에 로그인창에 썼던 아이디 비번을 가져온다.
+                                intent.putExtra("userID", userID);
+                                intent.putExtra("userPass", userPass);
+                                //실행
+                                startActivity(intent);
+                                
+                                ```
+ -REGISTERREQUEST
+  ```// URL에 전송 ( PHP 파일 연동 )
+    final static private String URL = "http://hsanol62.dothome.co.kr/Register.php";
+    
+    //포스트 방식으로 RESTER.PHP 파일에 해당 정보를 보내고 결과값을 가져온다.
+    public RegisterRequest(String userID, String userPassword, String userName, int userAge, Response.Listener<String> listener) {
+        super(Method.POST, URL, listener, null);
+        
+    //유저 정보 저장
+     map = new HashMap<>();
+        map.put("userID",userID);
+        map.put("userPassword", userPassword);
+        map.put("userName", userName);
+        map.put("userAge", userAge + "");
+    ```
+    
+    
+    
  # 구현
 
 <img src="https://user-images.githubusercontent.com/71969709/120219397-26558380-c276-11eb-800a-f53a7b0199e5.png" width="30%">
