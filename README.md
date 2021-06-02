@@ -4,7 +4,25 @@
 로그인 (로그인 여부)
 회원가입(아이디 중복 체크, 빈칸 거부)
 
+# 설명
+Bitnami WAMP 설치 [Apache(웹서버), MySQL(데이터), PHP]
+phpmyadmin 접속해 데이터 베이스 생성
+php로 데이터와 안드로이드 스튜디오 앱부분 연결
+
 # 코드
+### Android Studio
+<java>
+LoginActivity
+LoginRequest
+MainActivity
+RegisterActivity
+RegisterRequest
+
+<latout>
+activity_login.xml
+activity_main.xml
+activity_register.xml
+
 
 - lOGINACTIVITY
   ``` // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
@@ -44,7 +62,12 @@
         map.put("userAge", userAge + "");
    ```
     
-    
+  ### php
+  
+  
+  ### data - mysql
+  ![image](https://user-images.githubusercontent.com/71969709/120550885-606a8500-c430-11eb-839f-dd250f1cd9cb.png)
+
     
  # 구현
 
