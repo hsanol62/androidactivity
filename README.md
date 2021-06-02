@@ -61,16 +61,16 @@ activity_register.xml
   ```// URL에 전송 ( PHP 파일 연동 )
     final static private String URL = "http://hsanol62.dothome.co.kr/Register.php";
     
-    //포스트 방식으로 RESTER.PHP 파일에 해당 정보를 보내고 결과값을 가져온다.
+    //포스트 방식으로 RESTER.PHP 파일에 해당 정보를 요청 결과값을 가져온다.
     public RegisterRequest(String userID, String userPassword, String userName, int userAge, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
         
-    //유저 정보 저장
+    //mysql에 저장되어 있는 유저 정보 불러온다
      map = new HashMap<>();
         map.put("userID",userID);
         map.put("userPassword", userPassword);
         map.put("userName", userName);
-        map.put("userAge", userAge + "");
+
    ```
     
   ### php
