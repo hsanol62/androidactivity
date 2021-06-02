@@ -86,8 +86,10 @@ activity_register.xml
 
     
  # 구현
+<img src="https://user-images.githubusercontent.com/71969709/120554705-06b88980-c435-11eb-9cbe-f9eaad0eb729.png" width="30%">
+<img src="https://user-images.githubusercontent.com/71969709/120554766-1d5ee080-c435-11eb-927c-cab41a7e1bca.png" width="30%">
+<img src="https://user-images.githubusercontent.com/71969709/120554863-3e273600-c435-11eb-9f94-d7857caf1995.png" width="30%">
 
-<img src="https://user-images.githubusercontent.com/71969709/120219397-26558380-c276-11eb-800a-f53a7b0199e5.png" width="30%">
 <img src="https://user-images.githubusercontent.com/71969709/120219440-366d6300-c276-11eb-836d-9d6357d7d2db.png" width="30%">
 <img src="https://user-images.githubusercontent.com/71969709/120219456-3bcaad80-c276-11eb-998f-dd5c4e962632.png" width="30%">
 <img src="https://user-images.githubusercontent.com/71969709/120219470-41c08e80-c276-11eb-839f-23420eabdf1a.png" width="30%">
