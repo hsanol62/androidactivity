@@ -12,11 +12,11 @@ php로 데이터와 안드로이드 스튜디오 앱부분 연결
 # 코드
 ### Android Studio
 <java>
-LoginActivity
-LoginRequest
-MainActivity
-RegisterActivity
-RegisterRequest
+- LoginActivity
+- LoginRequest
+- MainActivity
+- RegisterActivity
+- RegisterRequest
 
 <latout>
 activity_login.xml
@@ -25,7 +25,18 @@ activity_register.xml
 
 
 - lOGINACTIVITY
-  ``` // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
+  ```
+   // 회원가입 버튼을 클릭 시 (수행 로그인화면에서 회원가입 화면으로 이동)
+        btn_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+ 
+  
+  // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
                 String userID = et_id.getText().toString();
                 String userPass = et_pass.getText().toString();```
 
