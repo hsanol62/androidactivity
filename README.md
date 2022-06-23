@@ -5,6 +5,8 @@
 회원가입(아이디 중복 체크, 빈칸 거부)
 
 # 설명
+>사용
+- PHP
 Bitnami WAMP 설치 [Apache(웹서버), MySQL(데이터), PHP]
 phpmyadmin 접속해 데이터 베이스 생성
 php로 데이터와 안드로이드 스튜디오 앱부분 연결
